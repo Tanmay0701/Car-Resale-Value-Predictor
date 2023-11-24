@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+    <!-- <link rel="stylesheet" href="../static/css/main.css"> -->
+</head>
+
+<body>
+    <h1>Car Resale Price Prediction </h1>
+
+    <h2>Welcome</h2>
+    <div class=center>
+        <form>
+            <div class="p">
+                <p>With difficult economic conditions, it is likely that sales of second-hand imported
+                    (reconditioned) cars and us
+                    ed cars will increase.
+                    In many developed countries, it is common to lease a car rather than buying it outright. After
+                    the lease period is over, the buyer has the possibility to
+                    buy the car at its residual value, i.e. its expected resale value. Thus, it is of commercial
+                    interest to sellers/financer
+                    s to be able to predict the salvage
+                    value (residual value) of cars with accuracy.
+
+                </p>
+
+                <p>
+                    In order to predict the resale value of the car, we proposed an intelligent, flexible, and
+                    effective system that is bas
+                    ed on using regression algorithms.
+                    Considering the main factors which would affect the resale value of a vehicle a regression model
+                    is to be built th
+                    at would give the nearest resale value of the vehicle.
+                    We will be using various regression algorithms and algorithm with the best accuracy will be
+                    taken as a solution,
+                    then it will be integrated to the web-based application
+                    where the user is notified with the status of his product.
+
+                </p>
+            </div>
+            <button class="submitButton"><a href="{{url_for('input_page')}}">Proceed</a></button>
+    </div>
+
+
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

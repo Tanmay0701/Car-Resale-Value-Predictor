@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>input</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/input.css')}}" />
+</head>
+
+<body>
+  <h1 class="fillDetails">
+    <center>Please fill the details of your car:</center>
+  </h1>
+  <div class="center">
+    <form action="/dosubmit" method='post'>
+      <div class="outerFlex">
+
+        <div class="flexUnit">
+          <label for="abtest">AB Test :</label>
+          <div>
+            <input type="radio" name="abtest" id="test" value="0" />
+            <label for="test" for="abtest">Test</label>
+            <input type="radio" name="abtest" id="control" value="1" />
+            <label for="control" for="abtest">Control</label>
+          </div>
+        </div>
+
+        <div class="flexUnit">
+          <label for="vehicle">Choose Vehicle Type :</label>
+          <select name="vehicle">
+            <option value="0">Coupe</option>
+            <option value="1">SUV</option>
+            <option value="2">Kleinwagen</option>
+            <option value="3">Limousine</option>
+            <option value="4">Cabrio</option>
+            <option value="5">Bus</option>
+            <option value="6">Kombi</option>
+            <option value="7">Others</option>
+          </select>
+        </div>
+
+        <div class="flexUnit">
+          <label for="">Reg Year :</label><input type="number" min="1970" name="reg_year" />
+        </div>
+
+        <div class="flexUnit">
+          <label for="gearBox">Gear Box Type :</label>
+          <div>
+            <input type="radio" id="manual" name="gearBox" value="0" />
+            <label for="manual">Manual</label>
+            <input type="radio" id="automatic" name="gearBox" value="1" />
+            <label for="automatic">Automatic</label>
+          </div>
+        </div>
+
+        <div class="flexUnit">
+          <label for="">Power of car in PS :</label><input type="number" min="0" name="power_ps" />
+        </div>
+
+        <div class="flexUnit">
+          <label for="">Kilometer the car has driven:</label><input type="number" min="0" name="kilometer_driven" />
+        </div>
+
+        <div class="flexUnit">
+          <label for="">Reg Month :</label><input type="number" min="1" max="12" name="reg_month" />
+        </div>
+
+        <div class="flexUnit">
+          <label for="fuel">Choose Fuel Type :</label>
+          <div>
+            <select name="fuel">
+              <option value="0">Diesel</option>
+              <option value="1">Benzene</option>
+              <option value="2">LPG</option>
+              <option value="4">Hybrid</option>
+              <option value="5">CNG</option>
+              <option value="6">Elektro</option>
+              <option value="3">Others</option>
+            </select>
+            <br />
+          </div>
+        </div>
+
+        <div class="flexUnit">
+          <label for="">Model Type :</label><input type="text"  name="model_type" />
+        </div>
+
+        <div class="flexUnit">
+          <label for="brand">Choose the brand of the Car :</label>
+          <div>
+            <select name="brand">
+              <option value="0">Alfa Romeo</option>
+              <option value="1">Audi</option>
+              <option value="2">BMW</option>
+              <option value="3">Chevrolet</option>
+              <option value="4">Chrysler</option>
+              <option value="5">Citroen</option>
+              <option value="6">Dacia</option>
+              <option value="7">Daewoo</option>
+              <option value="8">Daihatsu</option>
+              <option value="9">Fiat</option>
+              <option value="10">Ford</option>
+              <option value="11">Honda</option>
+              <option value="12">Hyundai</option>
+              <option value="13">Jaguar</option>
+              <option value="14">Jeep</option>
+              <option value="15">Kia</option>
+              <option value="16">Lada</option>
+              <option value="17">Lancia</option>
+              <option value="18">Land Rover</option>
+              <option value="19">Mazda</option>
+              <option value="20">Mercedes Benz</option>
+              <option value="21">Mini</option>
+              <option value="22">Mitsubishi</option>
+              <option value="23">Nissan</option>
+              <option value="24">Opel</option>
+              <option value="25">Peugeot</option>
+              <option value="26">Porsche</option>
+              <option value="27">Renault</option>
+              <option value="28">Rover</option>
+              <option value="29">Saab</option>
+              <option value="30">Seat</option>
+              <option value="31">Skoda</option>
+              <option value="32">Smart</option>
+              <option value="33">Sonstige Autos</option>
+              <option value="34">Subaru</option>
+              <option value="35">Suzuki</option>
+              <option value="36">Toyota</option>
+              <option value="37">Trabant</option>
+              <option value="38">Volkswagen</option>
+              <option value="39">Volvo</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="flexUnit">
+          <label for="">Pin Code :</label><input type="number"  name="pin_code" />
+        </div>
+
+        <div class="flexUnit">
+          <div>
+            <label for="carDamage">Is your car damaged :</label>
+          </div>
+          <div>
+            <input type="radio" id="yes" name="carDamage" value="1" />
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="carDamage" value="0" />
+            <label for="no">No</label>
+          </div>
+        </div>
+        <button class="submitButton">Predict</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
